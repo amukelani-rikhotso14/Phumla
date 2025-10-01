@@ -45,13 +45,13 @@ namespace Phumla.Forms
             lblNoGuestFound.Visible = false;
             btnShowAddGuest.Visible = false;
 
-            SetPlaceholder(txtFirstName, "First Name");
-            SetPlaceholder(txtLastName, "Last Name");
-            SetPlaceholder(txtPhone, "Phone (+27 xxx xxx xxxx)");
-            SetPlaceholder(txtEmail, "Email (optional)");
-            SetPlaceholder(txtIdNumber, "ID/Passport (optional)");
-            SetPlaceholder(txtLoyaltyCard, "Loyalty Card (optional)");
-            SetPlaceholder(txtAddress, "Address (optional)");
+            //SetPlaceholder(txtFirstName, "First Name");
+            //SetPlaceholder(txtLastName, "Last Name");
+            //SetPlaceholder(txtPhone, "Phone (+27 xxx xxx xxxx)");
+            //SetPlaceholder(txtEmail, "Email (optional)");
+            //SetPlaceholder(txtIdNumber, "ID/Passport (optional)");
+            //SetPlaceholder(txtLoyaltyCard, "Loyalty Card (optional)");
+            //SetPlaceholder(txtAddress, "Address (optional)");
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
@@ -200,28 +200,28 @@ namespace Phumla.Forms
             // TODO: Pass guest info to next booking/payment step
         }
 
-        private void SetPlaceholder(TextBox txt, string placeholder)
-        {
-            txt.ForeColor = System.Drawing.Color.Gray;
-            txt.Text = placeholder;
+        //private void SetPlaceholder(TextBox txt, string placeholder)
+        //{
+        //    txt.ForeColor = System.Drawing.Color.Gray;
+        //    txt.Text = placeholder;
 
-            txt.GotFocus += (s, e) =>
-            {
-                if (txt.Text == placeholder)
-                {
-                    txt.Text = "";
-                    txt.ForeColor = System.Drawing.Color.Black;
-                }
-            };
+        //    txt.GotFocus += (s, e) =>
+        //    {
+        //        if (txt.Text == placeholder)
+        //        {
+        //            txt.Text = "";
+        //            txt.ForeColor = System.Drawing.Color.Black;
+        //        }
+        //    };
 
-            txt.LostFocus += (s, e) =>
-            {
-                if (string.IsNullOrWhiteSpace(txt.Text))
-                {
-                    txt.Text = placeholder;
-                    txt.ForeColor = System.Drawing.Color.Gray;
-                }
-            };
-        }
+        //    txt.LostFocus += (s, e) =>
+        //    {
+        //        if (string.IsNullOrWhiteSpace(txt.Text))
+        //        {
+        //            txt.Text = placeholder;
+        //            txt.ForeColor = System.Drawing.Color.Gray;
+        //        }
+        //    };
+        //}
     }
 }

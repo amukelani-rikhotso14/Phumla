@@ -139,7 +139,7 @@
             // 
             this.txtFirstName.Location = new System.Drawing.Point(120, 30);
             this.txtFirstName.Name = "txtFirstName";
-            SetPlaceholder(txtFirstName, "First Name");
+            //SetPlaceholder(txtFirstName, "First Name");
             this.txtFirstName.Size = new System.Drawing.Size(150, 22);
             this.txtFirstName.TabIndex = 1;
             // 
@@ -147,7 +147,7 @@
             // 
             this.txtLastName.Location = new System.Drawing.Point(290, 30);
             this.txtLastName.Name = "txtLastName";
-            SetPlaceholder(txtLastName, "Last Name");
+            //SetPlaceholder(txtLastName, "Last Name");
             this.txtLastName.Size = new System.Drawing.Size(150, 22);
             this.txtLastName.TabIndex = 2;
             // 
@@ -155,7 +155,7 @@
             // 
             this.txtPhone.Location = new System.Drawing.Point(20, 70);
             this.txtPhone.Name = "txtPhone";
-            SetPlaceholder(txtPhone, "Phone (+27 xxx xxx xxxx)");
+           //SetPlaceholder(txtPhone, "Phone (+27 xxx xxx xxxx)");
             this.txtPhone.Size = new System.Drawing.Size(150, 22);
             this.txtPhone.TabIndex = 3;
             // 
@@ -163,7 +163,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(190, 70);
             this.txtEmail.Name = "txtEmail";
-            SetPlaceholder(txtEmail, "Email (optional)");
+            //SetPlaceholder(txtEmail, "Email (optional)");
             this.txtEmail.Size = new System.Drawing.Size(150, 22);
             this.txtEmail.TabIndex = 4;
             // 
@@ -171,7 +171,7 @@
             // 
             this.txtIdNumber.Location = new System.Drawing.Point(360, 70);
             this.txtIdNumber.Name = "txtIdNumber";
-            SetPlaceholder(txtIdNumber, "ID/Passport (optional)");
+            //SetPlaceholder(txtIdNumber, "ID/Passport (optional)");
             this.txtIdNumber.Size = new System.Drawing.Size(120, 22);
             this.txtIdNumber.TabIndex = 5;
             // 
@@ -179,7 +179,7 @@
             // 
             this.txtLoyaltyCard.Location = new System.Drawing.Point(20, 110);
             this.txtLoyaltyCard.Name = "txtLoyaltyCard";
-            SetPlaceholder(txtLoyaltyCard, "Loyalty Card (optional)");
+            //SetPlaceholder(txtLoyaltyCard, "Loyalty Card (optional)");
             this.txtLoyaltyCard.Size = new System.Drawing.Size(150, 22);
             this.txtLoyaltyCard.TabIndex = 6;
             // 
@@ -188,7 +188,7 @@
             this.txtAddress.Location = new System.Drawing.Point(190, 110);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            SetPlaceholder(txtAddress, "Address (optional)");
+            //SetPlaceholder(txtAddress, "Address (optional)");
             this.txtAddress.Size = new System.Drawing.Size(290, 50);
             this.txtAddress.TabIndex = 7;
             // 
@@ -256,3 +256,5 @@
         }
     }
 }
+
+//so i was useing SetPlaceholder and thats wat making the errors--theres a function in GuestLookupForms.cs for setPlaceHolder i think the error was because the function was not in Designer--but i dont know 4 sure so do watchu gotta do
